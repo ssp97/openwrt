@@ -236,6 +236,18 @@ define Device/radxa_rock-pi-s
 endef
 TARGET_DEVICES += radxa_rock-pi-s
 
+define Device/sakurapi_sakura-pi
+  DEVICE_VENDOR := SakuraPi
+  DEVICE_MODEL := Sakura Pi RK3308B
+  SOC := rk3308
+  SUPPORTED_DEVICES := sakurapi,rk3308b
+  DEVICE_DTS := rockchip/rk3308-sakurapi-rk3308b
+  UBOOT_DEVICE_NAME := sakura-pi-rk3308
+  BOOT_SCRIPT := rock-pi-s
+  DEVICE_PACKAGES := kmod-brcmfmac kmod-usb-net-cdc-ncm kmod-usb-net-rndis wpad-basic-mbedtls
+endef
+TARGET_DEVICES += sakurapi_sakura-pi
+
 define Device/radxa_zero-3e
   DEVICE_VENDOR := Radxa
   DEVICE_MODEL := ZERO 3E
