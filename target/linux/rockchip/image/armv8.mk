@@ -244,7 +244,7 @@ define Device/sakurapi_sakura-pi
   DEVICE_DTS := rockchip/rk3308-sakurapi-rk3308b
   UBOOT_DEVICE_NAME := sakura-pi-rk3308
   BOOT_SCRIPT := sakurapi
-  DEVICE_PACKAGES := kmod-brcmfmac kmod-usb-net-cdc-ncm kmod-usb-net-rndis wpad-basic-mbedtls
+  DEVICE_PACKAGES := kmod-brcmfmac brcmfmac-nvram-43455-sdio cypress-firmware-43455-sdio kmod-usb-net-cdc-ncm kmod-usb-net-rndis wpad-basic-mbedtls
 endef
 TARGET_DEVICES += sakurapi_sakura-pi
 
